@@ -1,3 +1,5 @@
+# Вывести список всех (junior, middle, senior) разработчиков.
+
 SELECT developers.id, developers.firstName, developers.lastName, developers.age, developers.sex, developers.salary
 FROM developers
 INNER JOIN developer_skills
