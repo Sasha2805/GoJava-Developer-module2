@@ -1,4 +1,4 @@
-package dbObjects;
+package objects;
 
 import lombok.Getter;
 import lombok.Setter;

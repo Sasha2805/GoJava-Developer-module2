@@ -1,4 +1,4 @@
-package dbObjects;
+package objects;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,15 +11,17 @@ public class Developer {
     private String lastName;
     private int age;
     private String sex;
+    private double salary;
 
     public Developer(){}
 
-    public Developer(int id, String firstName, String lastName, int age, String sex) {
+    public Developer(int id, String firstName, String lastName, int age, String sex, double salary) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
         this.sex = sex;
+        this.salary = salary;
     }
 
     @Override
@@ -30,6 +32,7 @@ public class Developer {
                 ", lastName = '" + lastName + '\'' +
                 ", age = " + age +
                 ", sex = '" + sex + '\'' +
+                ", salary = " + salary +
                 ']';
     }
 }
