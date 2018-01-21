@@ -56,4 +56,4 @@ fabric.properties
 
 # Maven
 log/
-target/
+target/classes
