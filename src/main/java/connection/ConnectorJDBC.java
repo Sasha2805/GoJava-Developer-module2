@@ -1,4 +1,4 @@
-package connectionJdbc;
+package connection;
 
 import properties.PropertyLoader;
 import java.sql.*;
@@ -15,17 +15,12 @@ public class ConnectorJDBC {
     public static Connection getConnection() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("The driver is connected.");
-
-            Connection connection = DriverManager.getConnection(
+            return DriverManager.getConnection(
                 String.format(URL, dbProperties.getProperty("hostName"),
                     dbProperties.getProperty("port"),
                     dbProperties.getProperty("databaseName")),
                 dbProperties.getProperty("userName"),
                 dbProperties.getProperty("userPassword"));
-            System.out.println("Connection established.");
-
-            return connection;
         } catch (Exception e) {
             e.printStackTrace();
         }
