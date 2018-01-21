@@ -1,4 +1,5 @@
 package dao;
 
-public interface DeveloperDAO {
-}
+import objects.Developer;
+
+public interface DeveloperDao extends Dao<Developer> {}

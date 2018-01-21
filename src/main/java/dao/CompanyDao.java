@@ -1,4 +1,5 @@
 package dao;
 
-public class CompanyDao {
-}
+import objects.Company;
+
+public interface CompanyDao extends Dao<Company> {}

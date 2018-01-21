@@ -1,4 +1,5 @@
 package dao;
 
-public class ProjectDao {
-}
+import objects.Project;
+
+public interface ProjectDao extends Dao<Project> {}
