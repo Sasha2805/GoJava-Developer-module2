@@ -3,7 +3,7 @@ package console;
 import properties.PropertyLoader;
 import java.util.Scanner;
 
-public class DatabasePropertiesConsole {
+public class DatabasePropertiesUI {
     public static void saveProperties(Scanner in){
         System.out.print("Database name:");
         String databaseName = in.next();

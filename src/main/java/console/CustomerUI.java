@@ -5,7 +5,7 @@ import objects.Customer;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class CustomerConsole {
+public class CustomerUI {
     public static void insertCustomer(Scanner in) throws SQLException {
         System.out.print("Enter id: ");
         int id = in.nextInt();

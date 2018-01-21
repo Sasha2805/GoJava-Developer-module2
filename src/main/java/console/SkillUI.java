@@ -5,7 +5,7 @@ import objects.Skill;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class SkillConsole {
+public class SkillUI {
     public static void insertSkill(Scanner in) throws SQLException {
         System.out.print("Enter id: ");
         int id = in.nextInt();

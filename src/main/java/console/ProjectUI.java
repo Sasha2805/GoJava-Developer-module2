@@ -5,7 +5,7 @@ import objects.Project;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class ProjectConsole {
+public class ProjectUI {
     public static void insertProject(Scanner in) throws SQLException {
         System.out.print("Enter id: ");
         int id = in.nextInt();

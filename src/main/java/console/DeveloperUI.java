@@ -5,7 +5,7 @@ import objects.Developer;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class DeveloperConsole {
+public class DeveloperUI {
     public static void insertDeveloper(Scanner in) throws SQLException {
         System.out.print("Enter id: ");
         int id = in.nextInt();

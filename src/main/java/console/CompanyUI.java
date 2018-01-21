@@ -5,7 +5,7 @@ import objects.Company;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class CompanyConsole {
+public class CompanyUI {
     public static void insertCompany(Scanner in) throws SQLException {
         System.out.print("Enter id: ");
         int id = in.nextInt();

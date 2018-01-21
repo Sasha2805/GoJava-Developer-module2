@@ -8,7 +8,7 @@ import dao.jdbc.SkillDaoJDBC;
 import java.sql.SQLException;
 import java.util.Scanner;
 
-public class DaoConsole {
+public class DaoUI {
     public static void getMethods(Scanner in, Dao objectDao) throws SQLException {
         while (true) {
             System.out.println("Select an action:");
@@ -34,27 +34,27 @@ public class DaoConsole {
                 System.out.println("Developer deleted.");
             } else if (choice == 4) {
                 if (objectDao instanceof DeveloperDaoJDBC) {
-                    DeveloperConsole.insertDeveloper(in);
+                    DeveloperUI.insertDeveloper(in);
                 } else if (objectDao instanceof ProjectDaoJDBC) {
-                    ProjectConsole.insertProject(in);
+                    ProjectUI.insertProject(in);
                 } else if (objectDao instanceof SkillDaoJDBC) {
-                    SkillConsole.insertSkill(in);
+                    SkillUI.insertSkill(in);
                 } else if (objectDao instanceof CompanyDaoJDBC) {
-                    CompanyConsole.insertCompany(in);
+                    CompanyUI.insertCompany(in);
                 } else {
-                    CustomerConsole.insertCustomer(in);
+                    CustomerUI.insertCustomer(in);
                 }
             } else if (choice == 5) {
                 if (objectDao instanceof DeveloperDaoJDBC) {
-                    DeveloperConsole.updateDeveloper(in);
+                    DeveloperUI.updateDeveloper(in);
                 } else if (objectDao instanceof ProjectDaoJDBC) {
-                    ProjectConsole.updateProject(in);
+                    ProjectUI.updateProject(in);
                 } else if (objectDao instanceof SkillDaoJDBC) {
-                    SkillConsole.updateSkill(in);
+                    SkillUI.updateSkill(in);
                 } else if (objectDao instanceof CompanyDaoJDBC) {
-                    CompanyConsole.updateCompany(in);
+                    CompanyUI.updateCompany(in);
                 } else {
-                    CustomerConsole.updateCustomer(in);
+                    CustomerUI.updateCustomer(in);
                 }
             } else if (choice == 6) {
                 break;
