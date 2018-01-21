@@ -5,7 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
 
-public class PropertiesLoader {
+public class PropertyLoader {
     // Loading properties from the file
     public static Properties loadProperties(String filePath){
         Properties properties = new Properties();
@@ -49,5 +49,23 @@ public class PropertiesLoader {
                 }
             }
         }
+    }
+
+    // Saving database settings in the properties file
+    public static boolean saveDbProperties(String databaseName, String hostName, String port, String userName,
+                                          String userPassword){
+        Properties dbProperties = new Properties();
+        dbProperties.setProperty("databaseName", databaseName);
+        dbProperties.setProperty("hostName", hostName);
+        dbProperties.setProperty("port", port);
+        dbProperties.setProperty("userName", userName);
+        dbProperties.setProperty("userPassword", userPassword);
+        try {
+            saveProperties(dbProperties, "src/main/resources/", "dbProperties/database.properties");
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }
