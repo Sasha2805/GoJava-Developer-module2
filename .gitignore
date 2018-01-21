@@ -30,6 +30,7 @@ cmake-build-release/
 .idea/**/mongoSettings.xml
 
 ## File-based project format:
+.idea/
 *.iws
 *.iml
 
