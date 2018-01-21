@@ -50,4 +50,9 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+idea
+01.iml
 target/
+.idea/
+*.iml
+.idea
